@@ -1,0 +1,19 @@
+{
+  "name": "pokeapi-mcp",
+  "version": "0.1.0",
+  "description": "MCP server exposing PokeAPI (https://pokeapi.co) as tools.",
+  "type": "module",
+  "bin": {
+    "pokeapi-mcp": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
