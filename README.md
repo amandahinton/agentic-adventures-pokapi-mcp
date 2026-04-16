@@ -29,10 +29,16 @@ npm start
   "mcpServers": {
     "pokeapi": {
       "command": "node",
-      "args": ["/Users/amandahinton/code/agentic-adventures-apr16/pokeapi-mcp/index.js"]
+      "args": ["THE PATH TO index.js"]
     }
   }
 }
 ```
 
 Requires Node 18+ (uses global `fetch`). No API key needed.
+
+To add the mcp run something like this with your path
+```
+claude mcp add pokeapi -- node <PATH TO index.js>
+```
+Add -s user (or -s project) before -- to change scope from the default local.
