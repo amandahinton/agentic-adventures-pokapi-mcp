@@ -37,8 +37,11 @@ npm start
 
 Requires Node 18+ (uses global `fetch`). No API key needed.
 
-To add the mcp run something like this with your path
+## Write to Claude Code config file
+VS Code's own mcp.json is separate and ```claude mcp add ...``` does not touch it. To add the mcp run something like this with your path:
 ```
 claude mcp add pokeapi -- node <PATH TO index.js>
 ```
-Add -s user (or -s project) before -- to change scope from the default local.
+It will add an object like the one in the previous section to ~/.claude.json
+The default is local scoped, nested under the current project's entry. Adding to context only for you, only for this project.
+Change the location with -s: ```-s user``` or ```-s project``` before -- to change scope from the default local
